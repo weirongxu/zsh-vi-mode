@@ -3147,7 +3147,7 @@ function zvm_zle-line-pre-redraw() {
     # Fix display is not updated in the terminal of IntelliJ IDE.
     # We should update display only when the last widget isn't a
     # completion widget
-    [[ $LASTWIDGET =~ 'complet' ]] || zle redisplay
+    # [[ $LASTWIDGET =~ 'complet' ]] || zle redisplay
   fi
   zvm_update_highlight
   zvm_update_repeat_commands
